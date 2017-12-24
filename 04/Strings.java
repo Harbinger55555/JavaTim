@@ -20,8 +20,7 @@ public class Strings {
 
         double doubleNum = 120.47d;
         lastString = lastString + doubleNum;
-        System.out.println("Last string value: " + lastString);
-        
+        System.out.println("Last string value: " + lastString);     
         
     }
 
