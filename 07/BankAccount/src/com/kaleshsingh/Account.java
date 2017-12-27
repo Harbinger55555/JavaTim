@@ -77,7 +77,7 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        if (amount <= this.balance) {
+        if (this.balance > 0 && amount <= this.balance) {
             this.balance -= amount;
             System.out.println("You have withdrawn $" + String.format("%.2f", amount) + ", your new balance is $" + String.format("%.2f", this.balance));
         } else {
